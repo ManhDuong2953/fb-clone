@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "img_url_avt": "",
+      "user_name": "Dương Mạnh",
+      "nick_name": "em yêu",
+      "status": "online",
+      "seen": false,
+      "messenger": [
+        {
+          "messenger_you": [
+            {
+              "text": "Xin chào!",
+              "img_mess": ""
+            },
+            {
+              "text": "Bn bao nhiêu tuổi rồi"
+            }
+          ],
+          "messenger_me": [
+            {
+              "text": "Chào bạn",
+              "img_mess": "Mình 19 tuổi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img_url_avt": "",
+      "user_name": "Công Cường",
+      "nick_name": "cường công chúa",
+      "status": "online",
+      "seen": true,
+      "messenger": [
+        {
+          "messenger_you": [
+            {
+              "text": "Xin chào!",
+              "img_mess": ""
+            }
+          ],
+          "messenger_me": [
+            {
+              "text": "Xin chào!",
+              "img_mess": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img_url_avt": "",
+      "user_name": "Công Cường",
+      "nick_name": "cường công chúa",
+      "status": "online",
+      "seen": true,
+      "messenger": [
+        {
+          "messenger_you": [
+            {
+              "text": "Xin chào!",
+              "img_mess": ""
+            }
+          ],
+          "messenger_me": [
+            {
+              "text": "Xin chào!",
+              "img_mess": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

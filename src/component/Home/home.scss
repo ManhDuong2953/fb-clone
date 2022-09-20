@@ -1,0 +1,21 @@
+.home-content {
+    margin-top: 60px;
+    display: flex;
+
+    .side-bar-left {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .posts {
+        flex: 2;
+    }
+
+
+    .side-bar-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+}

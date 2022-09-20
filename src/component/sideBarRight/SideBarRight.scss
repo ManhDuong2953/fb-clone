@@ -1,0 +1,175 @@
+.side-bar-right--main {
+    width: 400px;
+    padding: 8px 16px;
+    overflow: hidden;
+    height: 91vh;
+
+    .advertisment {
+        padding-bottom: 8px;
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 15px;
+            font-weight: 550;
+            padding: 20px 0 4px;
+
+        }
+
+        a {
+            color: var(--text-white-light);
+
+            .list-ad {
+                padding: 8px  10px 8px 0;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    max-width: 131px;
+                    border-radius: 6px;
+                    object-fit: cover;
+                }
+
+                .des-ad {
+                    padding: 0 10px;
+
+                    h4 {
+                        font-size: 15px;
+                    }
+
+                    p {
+                        color: var(--primary-color);
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .birthday-fr {
+        border-top: 1px solid var(--black-border);
+        border-bottom: 1px solid var(--black-border);
+        padding: 20px 0;
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 16px;
+            padding: 0 0 4px;
+
+        }
+
+        .birth-main {
+            display: flex;
+            align-items: center;
+            height: 53px;
+
+            span {
+                height: 36px;
+                width: 60px;
+                background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/18DJ_-JqzUZ.png);
+                background-position: 0 0;
+                background-size: 38px 390px;
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+
+            p {
+                padding-left: 8px;
+                color: var(--text-white);
+
+                b {
+                    font-weight: 550;
+                    cursor: pointer;
+                }
+
+                b.user-brd-hide {
+                    position: relative;
+
+                    ul.list-user-btd {
+                        padding: 5px;
+                        position: absolute;
+                        right: 0;
+                        width: max-content;
+                        display: none;
+
+                        li {
+                            padding: 5px;
+                            background-color: var(--gray-scroll-bar);
+                        }
+
+                        li:hover {
+                            color: var(--text-white);
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
+
+    .mess-main {
+
+
+
+
+        .mess-header {
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                color: var(--primary-color);
+                font-size: 15px;
+                font-weight: 550;
+            }
+
+
+
+            ul {
+                display: flex;
+                color: var(--primary-color);
+
+                li {
+                    .icon-mess-sub {
+                        border-radius: 50%;
+                        padding: 5px;
+                        font-size: 30px;
+                        line-height: 7px;
+                    }
+                }
+
+                li:hover {
+                    .icon-mess-sub {
+                        background-color: var(--black-input-bg);
+                    }
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .mess-container {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                padding: 6px 0;
+                color: var(--text-white-gray);
+                font-weight: 700;
+            }
+            li:hover{
+                background-color: var(--black-input-bg);
+            }
+        }
+    }
+}
+
+.side-bar-right--main:hover{
+    overflow-y: scroll;
+}

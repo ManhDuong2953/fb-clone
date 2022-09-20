@@ -1,0 +1,192 @@
+.ib-container {
+    width: 328px;
+    height: 457px;
+    position: fixed;
+    bottom: 0;
+    right: 90px;
+    background-color: var(--black-bg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 21;
+    box-shadow: -3px 6px 15px var(--black-text);
+
+
+    display: none;
+    .boxchat-header {
+        // background-color: rgb(36 37 38);
+        padding: 8px 13px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--black-border);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+
+        .icon-inbox {
+            color: var(--primary-color);
+
+        }
+
+        .user-status {
+            display: flex;
+            align-items: center;
+
+            svg {
+                font-size: 18px;
+                margin-left: 8px;
+                color: var(--blue-active);
+            }
+
+            span {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    color: var(--text-white-light);
+                    display: inline;
+                }
+
+                p.name-user {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                p.status {
+                    font-size: 12px;
+                    color: var(--primary-color);
+                }
+            }
+
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                padding: 5px;
+
+                svg {
+                    font-size: 20px;
+                    color: var(--blue-active);
+                }
+            }
+
+            li:hover {
+                cursor: pointer;
+                background-color: var(--black-input-bg);
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .boxchat-container {
+        height: 347px;
+        width: inherit;
+        overflow: auto;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 4px 0;
+
+            li.mess-text {
+                width: fit-content;
+                background-color: var(--blue-active);
+                border-radius: 20px;
+                margin: 1px 29px;
+
+                p {
+                    color: var(--text-white-light);
+                    padding: 7px 12px 8px;
+                    font-size: 15px;
+                    word-wrap: break-word;
+                    max-width: 200px;
+                }
+            }
+
+            .mess-emoji {
+                font-size: 40px;
+                margin: 1px 29px;
+
+            }
+        }
+
+        .mess-like {
+            display: flex;
+            justify-content: end;
+            font-size: 15px;
+
+            .user-container {
+                margin-top: -20px;
+
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+        }
+
+    }
+
+    .input-mess {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon-func-input {
+            // color: rgb(176, 179, 184);
+            font-size: 31px;
+            padding: 4px;
+            color: var(--blue-text);
+        }
+
+        .icon-like {
+            font-size: 40px;
+            padding: 0 5px;
+
+        }
+
+        .input-ib {
+            position: relative;
+
+            .icon-emoji {
+                // color: rgb(176, 179, 184);
+                position: absolute;
+                font-size: 20px;
+                top: 8px;
+                right: 12px;
+                color: var(--blue-text);
+            }
+
+            input {
+                background-color: var(--black-input-bg);
+                width: 145px;
+                height: 35px;
+                border-radius: 50px;
+                color: var(--text-white-light);
+                font-size: 16px;
+                padding: 0 16px 0 10px;
+                word-wrap: break-word;
+            
+            }
+
+            input::placeholder {
+                color: var(--primary-color);
+                font-size: 16px;
+            }
+
+            input:focus {
+                outline: none;
+            }
+        }
+
+    }
+}
+
+
+.ib-container.active{
+    display: block;
+}
